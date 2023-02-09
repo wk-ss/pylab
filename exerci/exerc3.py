@@ -1,10 +1,13 @@
-num1 = int(input("Digite um número inteiro:"))
-num2 = int(input("Digite outro número inteiro:"))
+aluno=[]
+cont=0
+quantidade=int(input('digite a quandidade de alunos: '))
+for loop in range(quantidade):
+    aluno.append(str(input('digite o nome dos alunos: ')))
+    cont+=1
+for liip in range(quantidade):
+    print (f"{aluno[liip]},{liip+1}")
 
-if num1 > num2:
-    maior = num1
-else:
-    maior = num2
-while (not(maior % num1 == 0 and maior % num2 == 0)):
-     maior += 1 
-print(maior)
+nome=input('digite o nome do aluno na busca: ')
+for laap in range(quantidade):
+    if nome==aluno[laap]:
+        print(f'nome encontrado na possiçao {laap+1}')

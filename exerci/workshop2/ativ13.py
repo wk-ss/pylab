@@ -1,23 +1,23 @@
 # Escreva um programa que receba como entrada a duração
 # de cada uma das cinco músicas que ela já escolheu, e
 # exiba qual o tempo total de entretenimento garantido.
-musicamt=0
-musicast=0
+minTOTAL=0
+secTOTAL=0
 for i in range(5):
-    musicam=int(input())
-    musicas=int(input())
-    musicamt+=musicam
-    musicast+=musicas
+    min=int(input())
+    sec=int(input())
+    minTOTAL+=min
+    secTOTAL+=sec
 
 h=0
-ms=(musicast//60)+musicamt
-s=musicast%60
-if ms>60:
-    h=ms//60
-    ms=h%60
-    s=ms%60
+m=(secTOTAL//60)+minTOTAL#m=divisiao inteira de (total de secundos/60)+(total de min)
+s=secTOTAL%60#s=resto da divisao de (total de secundos/60)
+if m>60:
+    h=m//60
+    m=h%60
+    s=m%60
 
 
 print(h)
-print(ms)
+print(m)
 print(s)

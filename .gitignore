@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 *.xml
 .idea/pylab.iml
+exerci/AtividadeSala/2pratica/num.txt

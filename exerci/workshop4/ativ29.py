@@ -1,3 +1,8 @@
+"""Escreva um programa onde os usuários podem digitar vários números inteiros,
+um de cada vez. Quando quiser encerrar o programa, basta digitar -1.
+Nessa hora o programa deverá exibir na tela a média aritmética dos números
+digitados, com 2 casas decimais.
+"""
 numeros = []
 terminou = False
 while not terminou:

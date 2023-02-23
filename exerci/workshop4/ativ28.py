@@ -17,6 +17,7 @@ def media_pares_impares(lista):
     mediaimp=somaimp/len(listainp)
     return print(f'{mediapar}\n{mediaimp}')
 
-# Programa principal (ja implementado, voce nao precisa se preocupar com o codigo partir deste ponto)
+# Programa principal (ja implementado, voce nao precisa se preocupar
+#  com o codigo partir deste ponto)
 lista = eval(input())
 media_pares_impares(lista)
